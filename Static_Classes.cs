@@ -55,5 +55,7 @@ class TestTemperatureConverter
                 System.Console.WriteLine("Please select a convertor.");
                 break;
         }
+        //This line waits for user to press key to terminate console
+        Console.ReadLine();
     }
 }
