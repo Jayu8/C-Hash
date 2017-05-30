@@ -1,0 +1,63 @@
+Static Classes cannot be instantiated and contain static methods only.
+These are accessed use CLASS name
+
+EX:1
+
+static class Logger
+{
+   static Initialise ()
+   {
+   }
+}
+class MainClass()
+{
+ static void Main()
+ {
+   Logger.Initialise();                // correct
+   
+   Logger meLogger = new Logger();     // Wrong as static class
+   Logger meLogger = new Logger();      //correct if class not static but no use as all methods in class static
+ }
+}
+
+EX:2
+
+class Logger
+{
+   int hi;
+   static Initialise ()
+   {
+   }
+}
+Main()
+{
+   Logger meLogger = new Logger();     //correct and useful as a field is accessible
+   meLogger.hi = 1                     
+}
+
+Additional Note:
+C++ example will be  same except (assuming no classes)
+1)there will be no static in methods  Ex: instead of static Initialise () just static Initialise ()
+2)method called directly ex: instead of Logger.Initialise() just Initialise()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
