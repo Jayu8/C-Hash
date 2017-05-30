@@ -1,0 +1,16 @@
+ If you're working within Static Code such as within this Main Method
+ and you want to call other code within the same class that code also has to be in a static method.
+
+static main()
+{
+  method1       correct  
+  method2       wrong
+}
+static method1()
+{
+
+}
+ method2()
+{
+
+}
