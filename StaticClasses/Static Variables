@@ -1,0 +1,15 @@
+1) These Variables are shareable (Like Global)(Gloabal if public static)
+2) Exist throughout runtime.
+3) In C stored in .Data segment if initialised and in .BSS segment if uninitialised
+4) Stored seperately from stack and Heap.
+
+Example of Global
+
+class Cow
+{
+ public static int numInstances;  //This is a Global can be called from any class
+}
+Main
+{
+ Cow.numInstances=123; // no instance required directly CLASS name
+}
