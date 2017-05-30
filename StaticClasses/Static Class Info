@@ -1,5 +1,5 @@
 Static Classes cannot be instantiated and contain static methods only.
-These are accessed use CLASS name
+Methods are accessed directy using CLASS name instead of object name.
 
 EX:1
 
@@ -39,25 +39,3 @@ Additional Note:
 C++ example will be  same except (assuming no classes)
 1)there will be no static in methods  Ex: instead of static Initialise () just static Initialise ()
 2)method called directly ex: instead of Logger.Initialise() just Initialise()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
