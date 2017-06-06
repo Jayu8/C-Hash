@@ -1,5 +1,7 @@
 # C-Hash
 
+Ctrl + F5 to see Console output
+
 Documenation for visual studio needs to be downloaded to use press F1
 
 Diffrent concepts of C# are tried and tested
