@@ -4,7 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+/// <summary>
+/// Example:
+///   (Reference to A)          --  A {Node[data, next(Reference to B)]} --  B{Node[data, next(Reference to C)]} -- C=null   
+///    A random place which          Node A which has data and also next     Node B which has data and also next    Node C is null  
+/// contains Node A address          which contains Node B address            which contains Node B address       
+/// </summary>
 
 namespace Linked_List_Basic
 {
@@ -44,7 +49,8 @@ namespace Linked_List_Basic
             //Here mynode.data can also be accessed
             mynode.next = new Node(11);  
             mynode.next.next = new Linked_List_Basic.Node(8); // this is similar to Node(8)
-            mynode.print(); 
+            mynode.next.next.data = 10;
+            mynode.print();
         }
     }
 }
